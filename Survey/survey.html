@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>survey</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css2?family=Bangers">
+</head>
+<body>
+    <h1 id="title">Survey form</h1>
+    <p id="description">Here is a form to know if I can make one.</p>
+    <form id="survey-form" action="" method="get"><br>
+        <div id=div-name>
+            <label class="title-input" id="name-label" for="name">Name : <br>
+                <input class="input" id="name" name="name" type="text" placeholder="Enter your name" required>
+            </label>
+        </div><br>
+        <div id="div-email">
+            <label class="title-input" id="email-label" for="email">Email : <br>
+                <input class="input" id="email" name="email" type="email" placeholder="Enter your email" required>
+            </label>
+        </div><br>
+        <div id="div-number">
+            <label class="title-input" id="number-label" for="number">Satisfaction : <br>
+                <input class="input" id="number" name="number" type="number" placeholder="Enter a number between 0-10"  min="0" max="10">
+            </label>
+        </div> <br>
+        <div id="div-dropdown">
+            <label class="title-input" id="dropdown-label" for="agree">Can I make a survey : <br>
+                <select class="input" name="agree" id="dropdown">
+                    <option value="yes">Yes</option>
+                    <option value="no">No</option>
+                </select>
+            </label>
+        </div><br>
+        <div class="input" id="div-rd">
+            <label id="rd-label" for="rd">Do you believe you can make a better one : <br>
+                <input type="radio" name="rd" value="of course">Of course <br>
+                <input type="radio" name="rd" value="maybe">Maybe <br>
+                <input type="radio" name="rd" value="absolutly not">Absolutly not <br>
+            </label>
+        </div> <br>
+        <div class="input" id="div-check">
+            <label id="check-label" for="check">Which kind of person are you ?<br>
+                <input type="checkbox" name="ckeck" value="kind">Kind <br>
+                <input type="checkbox" name="ckeck" value="ignorant">Ignorant <br>
+                <input type="checkbox" name="ckeck" value="intelligent">Intelligent <br>
+                <input type="checkbox" name="ckeck" value="selfish">Selfish <br>
+                <input type="checkbox" name="ckeck" value="altruist">Altruist <br>
+            </label>
+        </div> <br>
+        <di class="title-input" id="div-area">
+            <label clas id="area-label" for="area">Additional Comments : <br>
+                <textarea class="input" name="area" id="area" cols="50" rows="10">Insert any comments here</textarea>
+            </label>
+        </div><br>
+        <div id="div-submit">
+            <label id="submit-label" for="submit">
+                <input class="input" type="submit" id="submit" name="submit" value="Submit">
+            </label>
+        </div><br>
+    </form>
+</body>
+</html>
